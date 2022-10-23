@@ -1,0 +1,28 @@
+use std::sync::{Arc, Mutex};
+
+
+pub type ArcM<T> = Arc<Mutex<T>>;
+pub trait ToArcMutex {
+    fn arc_mut(self) -> ArcM<Self>;
+}
+//impl ToArcMutex for String {}
+impl<T> ToArcMutex for T where T: Sized  {
+    fn arc_mut(self) -> ArcM<Self>{
+        Arc::new(Mutex::new(self))
+    }
+}
+#[derive(Debug)]
+struct Test {
+    num_list: Vec<u32>
+}
+#[cfg(test)]
+mod test {
+    use super::*;
+    #[test]
+    fn test_arcm(){
+        let test = Test { num_list: vec![1] }.arc_mut();
+        let mut locked = test.lock().unwrap();
+        locked.num_list = vec![1,2,3,4];       
+    }
+
+}

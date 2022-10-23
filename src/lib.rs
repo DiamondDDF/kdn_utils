@@ -10,6 +10,6 @@ mod tests {
 
     #[test]
     fn test_usd() {
-       
+        println!("Made change.");
     }
 }

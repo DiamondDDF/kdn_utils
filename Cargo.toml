@@ -1,5 +1,5 @@
 [package]
-name = "kdn_utils"
+name = "kdn_lib"
 version = "0.1.0"
 edition = "2021"
 
@@ -9,3 +9,12 @@ edition = "2021"
 hex = "0.4.3"
 rust_decimal = "1.26"
 rust_decimal_macros = "1.26"
+ethereum-types = "0.14.0"
+# enum-map is so that you can have hashmaps keyed by enums:
+enum-map = "2.4.1"
+enum-map-derive = "0.10.0"
+# thiserror give error implementations and apparently converstions now:
+thiserror =  "1.0.37"
+dotenv = "0.15.0"
+anyhow = "1.0.66"
+console = "0.15.2"

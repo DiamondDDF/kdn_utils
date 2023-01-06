@@ -1,5 +1,3 @@
-#![allow(warnings)]
-#![allow(unused_imports)]
 pub trait ToHex {
     fn hex(&self) -> String;
 }

@@ -1,5 +1,3 @@
-#![allow(warnings)]
-#![allow(unused_imports)]
 use super::*;
 use hex;
 pub trait ToUnpadded {

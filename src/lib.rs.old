@@ -1,7 +1,5 @@
 #![allow(warnings)]
 #![allow(unused_imports)]
-#![allow(warnings)]
-#![allow(unused_imports)]
 pub mod error;
 mod input;
 mod traits;

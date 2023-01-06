@@ -1,5 +1,3 @@
-#![allow(warnings)]
-#![allow(unused_imports)]
 use crate::error::*;
 use crate::numbers::*;
 use crate::traits::*;

@@ -1,8 +1,6 @@
-#![allow(warnings)]
-#![allow(unused_imports)]
 use rust_decimal::prelude::*;
 use rust_decimal_macros::dec;
 
 pub trait ToUSD {
-    fn usd(&self) -> Decimal;
+    fn usd(&self)-> Decimal;
 }

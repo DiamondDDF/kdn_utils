@@ -1,5 +1,3 @@
-#![allow(warnings)]
-#![allow(unused_imports)]
 pub mod to_hex;
 pub mod to_unpadded;
 pub use to_hex::*;
